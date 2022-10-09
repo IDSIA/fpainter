@@ -1,0 +1,8 @@
+torch
+torchvision
+retry
+tqdm
+einops
+kornia
+ninja
+wandb
