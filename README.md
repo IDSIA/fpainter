@@ -43,7 +43,7 @@ We used python >= 3.8 and PyTorch >= 1.9.
 ## Generating images from pre-trained models
 NB: there is no need to prepare/download any image data for generating images from a pre-trained model.
 
-Pre-trained models can be found [here](https://people.idsia.ch/~kazuki/data/2022_fpa/).
+Pre-trained models can be found [here](https://drive.google.com/file/d/1mtD3wATtGJfkX6IjRPH-G1ZxOlbcpVax/view?usp=sharing).
 The same folder contains example scripts for training and image generation from the corresponding model.
 
 ## Training & evaluation/generation
@@ -57,7 +57,7 @@ Here are some useful links:
 - LSUN [fyu/lsun](https://github.com/fyu/lsun)
 
 ### Training
-We provide example training scripts [here](https://people.idsia.ch/~kazuki/data/2022_fpa/).
+We provide example training scripts (with the pre-trained models) [here](https://drive.google.com/file/d/1mtD3wATtGJfkX6IjRPH-G1ZxOlbcpVax/view?usp=sharing).
 A typical example looks as follows:
 
 ```
