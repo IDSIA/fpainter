@@ -2,7 +2,7 @@
 
 This is the official repository containing code for the paper:
 
-Images as Weight Matrices: Sequential Image Generation Through Synaptic Learning Rules (link coming soon)
+[Images as Weight Matrices: Sequential Image Generation Through Synaptic Learning Rules](https://arxiv.org/abs/2210.06184)
 
 ### Illustrations
 
@@ -150,4 +150,13 @@ and modify `--model_type` to specify the corresponding FPA/U-Net architecture.
 * [Jürgen Schmidhuber's AI blog post on Fast Weight Programmers (March 26, 2021)](https://people.idsia.ch/~juergen/fast-weight-programmer-1991-transformer.html).
 
 ## BibTex
-Coming soon.
+```
+@inproceedings{irie2023image,
+  title={Images as Weight Matrices: Sequential Image Generation Through Synaptic Learning Rules},
+  author={Kazuki Irie and J{\"u}rgen Schmidhuber},
+  booktitle={Int. Conf. on Learning Representations (ICLR)},
+  address = {Kigali, Rwanda}, 
+  month = may,
+  year={2023}
+}
+```
