@@ -2,7 +2,7 @@
 
 This is the official repository containing code for the paper:
 
-[Images as Weight Matrices: Sequential Image Generation Through Synaptic Learning Rules](https://arxiv.org/abs/2210.06184)
+[Images as Weight Matrices: Sequential Image Generation Through Synaptic Learning Rules (ICLR 2023)](https://arxiv.org/abs/2210.06184)
 
 ### Illustrations
 
@@ -23,7 +23,7 @@ Iterative generation steps from left to right. *Top row: rank-1 update, bottom r
 ### Preliminary notes
 
 This repository is originally forked from [lucidrains/lightweight-gan](https://github.com/lucidrains/lightweight-gan).
-Apart from the implementation of our generators/FPAs, we applied a few crucial modifications to consistently compute FID scores (see also Appendix B.4 of the paper):
+In addition to the implementation of our generators/FPAs, we also applied a few crucial modifications to consistently compute FID scores (see also Appendix B.4 of the paper):
 * The image format can be specified via `--image_save_format`. We store generated and resized real images in the same format to compute FIDs.
 * Following the standard practice, we use all real images to compute an FID.
 NB: the implementation of FID computation in the current code is suboptimal: the same statistics for the real images are recomputed at every FID computation. Instead, we should compute the stastistics only for the first time (or pre-compute them), store and reuse them. However, this would also require changes in the actual function that computes the FID (we use [mseitzer/pytorch-fid](https://github.com/mseitzer/pytorch-fid) that does not support pre-computed statistics, unlike [GaParmar/clean-fid](https://github.com/GaParmar/clean-fid)). In the end, we left this as is, but ideally this should be improved.
@@ -41,7 +41,7 @@ The packages we used for our experiments can be found in the `requirements.txt` 
 We used python >= 3.8 and PyTorch >= 1.9.
 
 ## Generating images from pre-trained models
-NB: there is no need to prepare/download any image data for generating images from a pre-trained model.
+NB: there is no need to prepare/download any image data to generate images from a pre-trained model.
 
 Pre-trained models can be found [here](https://drive.google.com/file/d/1mtD3wATtGJfkX6IjRPH-G1ZxOlbcpVax/view?usp=sharing).
 The same folder contains example scripts for training and image generation from the corresponding model.
